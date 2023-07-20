@@ -1,7 +1,8 @@
 # 👋 Hello developer!
 This is one of the many templates available from W3schools. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/css/default.asp). 🦄
 
-![alt text](https://drive.google.com/uc?export=view&id=159Qb99MnZKlXd-JAHw7V5HehF2YlBVQe)
+[![Video Title](http://img.youtube.com/vi/JC3l4GglFH4/0.jpg)](http://www.youtube.com/watch?v=JC3l4GglFH4)
+
 
 ## 🏗 What's next?
 Customize this template to make it your own. Remember to make your layout responsive - if you want your site to look good on smaller screens like mobile. 
