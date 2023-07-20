@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ivan Chan">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Ivan_grad_photo.jpg">
+    <meta property="og:url" content="https://ivan-s-chan.w3spaces.com/">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles-v2.css" />
+    <title>Ivan Chan</title>
+</head>
+
+<body>
+
+
+    <div id = "home" class="w3-row-padding">
+    
+        <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#programming-projects">Programming Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#links">Links</a>
+
+    </div>
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }   
+    </script>
+    <div>    
+        <script>
+        window.onbeforeunload = function(){
+            window.scrollTo(0,0);
+        }
+        </script>
+        <br>
+        <img src="https://ivan-s-chan.w3spaces.com/Ivan_grad_photo.jpg" alt="Picture of Ivan Chan in graduation apparel" style="width:70%">
+        <h2>Hi! My name is Ivan Chan.</h2>
+        <h5>Thank you for visiting my website at <b id="curr_date"></b></h5>
+        <script>
+        var date = new Date();
+        let output = date.toLocaleString("en-US");
+        document.getElementById("curr_date").innerHTML = output;
+
+        </script>              
+
+        </h5>
+        <h5> I am looking for a job as a Software Engineer or a Software Developer.</h5>
+        <h5>I have experience in front-end programming and object-oriented programming.</h5>
+        <hr>
+    </div>
+
+    <div id="education">
+        <br>
+        <br>
+        <h2 class="section-class"><b>Education</b></h2>
+        <h5 class = "small-title"><b>University of California, Riverside</b></h5>
+        <h6>September 2018 - March 2023</h6>
+        <p>Bachelor of Science in Computer Engineering</p>
+        <p>Skills learned at school: Linux, C/C++, Data Structures and Algorithms, Operating Systems, Computer Networks, Technical Communication, and so much more!</p>
+        <hr>
+        <h5 class = "small-title"><b>Meta Front-End Professional Certificate (Expected September 2023)</b></h5>
+        <h6>Coursera</h6>
+        <p><b>Completed Courses: </b>Introduction to Front-End Development</p>
+        <p><b>Relevant Skills: </b> Front-End Programming, JavaScript, React, User Interface(UI), User Experience(UX)</p>
+        
+    </div>
+
+    <div id="skills">
+        <br>
+        <br>
+        <h2 class="section-class"><b>Skills</b></h2>
+        
+        <h5 class = "small-title"><b>Software</b></h5>
+        <p>GitHub, Visual Studio, Microsoft Azure, VirtualBox</p>
+        <h5 class = "small-title"><b>Programming Languages:</b></h5>
+        <p>HTML (1 year), CSS (1 year), <b>JavaScript</b>, <b>React</b></p>
+        <p> C/C++ (2+ years experience), Python (1 year experience)</p>
+        <h5 class = "small-title"><b>Operating Systems</b></h5>
+        <p><b>Linux</b> (command line, Ubuntu), Windows</p>
+        <h5 class = "small-title"><b>Other skills:</b></h5>
+        <p><b>API</b> (Google Maps API)</p>
+        <br>
+        <a href="skills.html">See detailed list</a>
+        
+        <hr>
+    </div>
+    <div id="programming-projects">
+        <br>
+        <br>
+        <h2 class="section-class"><b>Programming Projects</b></h2>
+        <h5 class = "small-title"><b>React Portfolio</b></h5>
+        <h6>June 2023 - Present</h6>
+        <p>Create React app with image and website links</p>
+        <p> In progress, made using Visual Studio</p>
+        <a href="https://github.com/ichan018/cs-portfolio">See code</a><br>
+        <img src="images/react_portfolio_screenshot.png" alt="Screenshot of React Portfolio app with image of Ivan" width="350" height="350">
+        <hr>
+
+        <h5 class = "small-title"><b>Ivan's Website</b></h5>
+        <h6>April 2023 - Present</h6>
+        <p>This is the website that you are reading right now. This website uses HTML and CSS.</p>
+        <p>Over 30 people have looked at this website.</p>
+        <!--<a href="https://drive.google.com/drive/folders/1YjEjoTQTirKRuYuo953OZQlUrADo9Gb6">Project Link</a> -->
+        <hr>
+
+        <h5 class = "small-title"><b>Python User Directory</b></h5>
+        <h6>May 2023 - Present</h6>
+        <p> I created a user directory using the Python programming language.</p>
+        <p> The directory can add users, has password protection for each user, and can store an editable message for each user. </p>
+        <a href="https://github.com/ichan018/userDirectory">See code </a>
+        
+        <hr>
+
+        <h5 class = "small-title"><b>CS 122A: Brightness and Humidity Checker</b></h5>
+        <h6>April 2022</h6>
+        <img src="/cs-122a/led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
+        <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
+        <p>This project took about 3 weeks to complete.</p>
+        <p> A cable sends the information from the breadboard to my laptop. The Arduino software then reads the information from the breadboard.</p>
+        <a href="/cs-122a/cs122a_project.html">See more</a>
+        
+        <hr>
+
+        <h5 class = "small-title"><b>CS 153: Operating Systems</b></h5>
+        <h6>July 2021 - August 2021</h6>
+        <p> Worked with 1 other person to modify the memory locations in Unix server (xv6)</p>
+        <p>Modified system calls, did threading, adjusted page locations on stack using C programming language</p>
+        <a href="cs153_project.html">See more</a>
+        
+        <hr>
+
+        <h5 class = "small-title"><b>CS 100: RShell Project: Linux commands</b></h5>
+        <h6>October 2019 - December 2019</h6>
+        <p>With 1 other partner, I made a Linux/Unix shell that can do several Linux/Unix commands.</p>
+        <p>The shell can do the ls and echo commands. The shell can also do certain && and || commands.</p>
+        <p>The shell uses C++ code.</p>
+        <a href="cs100.html">See more</a>
+        
+        
+    </div>
+    
+    <div id="blog">
+        <br>
+        <br>
+        <h2 class="section-class">Blog</h2>
+        <p>See some interesting things that I have created recently:</p>
+        <h6><a href="ivan_blog/favorite-places.html">Favorite Places (with Google Map API)</a></h6>
+        <p>See some interesting things that I have created recently:</p>
+        <h6><a href="interesting-stuff.html">Link to website</a><h6>
+    </div>
+
+    <div id="links">
+        <br>
+        <br>
+        <h2 class="section-class">Contact Information</h2>
+        <p><i class="fa fa-envelope"></i>&nbsp Email me at: <b>ivanstevechan@gmail.com</b></p>
+        <p><i class= "fa fa-linkedin"></i> &nbsp Connect with me on <a href="https://www.linkedin.com/in/ivan-s-chan/" target="_blank">Linkedin</a></p><!--  Extra space -->
+        <p><i class="fa fa-github"></i>&nbsp;&nbsp Look at my <a href="https://github.com/ichan018"  target="_blank">GitHub</a></p>
+        <hr>
+
+                
+    </div>
+
+    <div>
+        <p>Image of Ivan Chan was taken by Solomon Cheung in June 2022.</p>
+        <p>This website was made with W3schools Spaces. Make your own free website today!</p>
+        <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> <!-- End footer -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title> Ivan Chan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+  </head>
+<body class="w3-container w3-pale-green">
+<!--<body class="w3-light-grey"> -->
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top w3-white w3-text-black w3-card-4" style="max-width:1400px;">
+<!-- Insert dropdown menu here-->
+    
+  <!-- The Grid -->
+    <div class="w3-row-padding">
+    
+        <div id="home" class="navbar">
+        <a href="#home">Home</a>
+        <!-- <a href="#links">Links</a> -->
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#programming-projects">Programming Projects</a>
+        <a href="#blog">Blog</a>
+
+        
+        
+        
+      </div>
+        
+    <script>
+      window.onbeforeunload = function(){
+        window.scrollTo(0,0);
+      }
+    </script>
+
+      
+
+    <!-- Right Column -->
+    <!--div class="w3-twothird"-->
+    <div>
+      
+      <!--
+      <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+      -->
+
+      <div class="w3-white w3-text-black w3-card-4">
+        <div class="w3-display-container">
+          <!--img src="https://drive.google.com/uc?export=view&id=1MqTjVDBniNTm6JzxAExtW3vUowlICm2p" alt="Avatar"style="width:75px;height:100px;"-->
+          <img src="https://ivan-s-chan.w3spaces.com/Ivan_grad_photo.jpg" alt="Ivan Chan - picture of face. Taken by Solomon Cheung in June 2022"style="width:55%">
+
+          <!--<div class="w3-display-bottomleft w3-container w3-text-black"> -->
+          <div class="w3-container w3-text-black">
+            <h2>Hi! My name is Ivan Chan.</h2>
+            <h5>Thank you for visiting my website at <b id="curr_date"></b></h5>
+            <script>
+            var date = new Date();
+            let output = date.toLocaleString("en-US");
+            document.getElementById("curr_date").innerHTML = output;
+
+            </script>              
+
+            </h5>
+            <h5> I am a hardworking and enthusiastic recent Computer Engineering graduate with experience in C++, Python, and HTML who is looking to be a Software Engineer or a Software Developer so that I can improve my technical skills, collaborate on projects, and help clients finish their projects.</h5>
+            <br>
+          </div>
+        </div>
+        
+      </div><br>
+      <div id="links" class="w3-container w3-card w3-white">
+       <div class="w3-container">
+          <hr>
+          <h5><i class="fa fa-envelope w3-hover-opacity"></i>&nbsp Email me at: <b>ivanstevechan@gmail.com</b></h5>
+          <h5><i class= "fa fa-linkedin w3-hover-opacity"></i> &nbsp Connect with me on <a href="https://www.linkedin.com/in/ivan-s-chan/" target="_blank">Linkedin</a></h5><!--  Extra space -->
+          <h5><i class="fa fa-github w3-hover-opacity"></i>&nbsp;&nbsp Look at my <a href="https://github.com/ichan018"  target="_blank">GitHub</a></h5>
+          <hr>
+
+                    
+        </div>
+      </div><br>
+
+      <div id="education" class="w3-container w3-card w3-white">
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of California, Riverside</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2018 - March 2023</h6>
+          <p>Bachelor of Science in Computer Engineering</p>
+          <p>Skills learned at school: Linux, C/C++, Data Structures and Algorithms, Operating Systems, Computer Networks, Technical Communication, and so much more!</p>
+          <hr>
+        </div>
+        
+      </div>
+
+      <div id="skills" class="w3-container w3-card w3-white">
+        <h2 class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Operating Systems</b></h5>
+          <p>Linux (command line, Ubuntu, SUSE Enterprise), Windows</p>
+          <h5 class="w3-opacity"><b>Software</b></h5>
+          <p>GitHub, Visual Studio, Microsoft Azure, VirtualBox, MATLAB, SPICE</p>
+          <h5 class="w3-opacity"><b>Programming Languages:</b></h5>
+          <p>Proficient: C/C++ (2+ years experience), Python (1 year experience)</p>
+          <p>Familiar: HTML, CSS</p>
+          <P>Some Experience: SQL, Javascript, Arduino, Verilog, PHP </p>
+          <hr>
+          <a href="skills.html">See more</a>
+          
+          <hr>
+        </div>
+        
+      </div>
+
+      <div class="w3-container w3-card w3-white" id="programming-projects">
+        <h2  class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Programming Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>React Portfolio</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2023 - Present</h6>
+          <p>Create React app with image and website links</p>
+          <p> In progress, made using Visual Studio</p>
+          <a href="https://github.com/ichan018/cs-portfolio">See code</a>
+          
+          <hr>
+        </div>
+        
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Ivan's Website</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2023 - Present</h6>
+          <p>This is the website that you are reading right now. This website uses HTML and CSS.</p>
+          <p>Over 30 people have looked at this website.</p>
+          <!--<a href="https://drive.google.com/drive/folders/1YjEjoTQTirKRuYuo953OZQlUrADo9Gb6">Project Link</a> -->
+          <hr>
+        </div>
+
+      <div class="w3-container" id="python-directory">
+          <h5 class="w3-opacity"><b>Python User Directory</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Present</h6>
+          <p> I created a user directory using the Python programming language.</p>
+          <p> The directory can add users, has password protection for each user, and can store an editable message for each user. </p>
+          <a href="https://github.com/ichan018/userDirectory">See code </a>
+          
+          <hr>
+        </div>
+
+
+        <div class="w3-container" id="brightness-humidity">
+          <h5 class="w3-opacity"><b>CS 122A: Brightness and Humidity Checker</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2022</h6>
+          <img src="/cs-122a/led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
+          <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
+          <p>This project took about 3 weeks to complete.</p>
+          <p> A cable sends the information from the breadboard to my laptop. The Arduino software then reads the information from the breadboard.</p>
+          <a href="/cs-122a/cs122a_project.html">See more</a>
+          
+          <hr>
+        </div>
+
+        <div class="w3-container" id="cs153-os">
+          <h5 class="w3-opacity"><b>CS 153: Operating Systems</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2021 - August 2021</h6>
+          <p> Worked with 1 other person to modify the memory locations in Unix server (xv6)</p>
+          <p>Modified system calls, did threading, adjusted page locations on stack using C programming language</p>
+          <a href="cs153_project.html">See more</a>
+          
+          <hr>
+        </div>
+
+        <div class="w3-container" id="cs100">
+          <h5 class="w3-opacity"><b>CS 100: RShell Project: Linux commands</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>October 2019 - December 2019</h6>
+          <p>With 1 other partner, I made a Linux/Unix shell that can do several Linux/Unix commands.</p>
+          <p>The shell can do the ls and echo commands. The shell can also do certain && and || commands.</p>
+          <p>The shell uses C++ code.</p>
+          <a href="cs100.html">See more</a>
+          
+          <hr>
+        </div>
+        
+      </div>
+
+      <div id="blog" class="w3-container w3-card w3-white">
+      <h2  class="w3-text-black w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Programming Projects</h2>
+
+      <h4>See some interesting things that I have created recently:</h4>
+      <h6><a href="https://ivan-s-chan.w3spaces.com/ivan_blog/favorite-places.html">Favorite Places (with Google Map API)</a></h6>
+
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+      <h4>See some interesting things that I have created recently:</h4>
+      <a href="https://ivan-s-chan.w3spaces.com/interesting-stuff.html">Link</a>
+      </div>
+
+
+           
+      
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-instagram w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+  <!--<i class="fa fa-twitter w3-hover-opacity"></i>-->
+  
+  <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/ivan-s-chan/" style="text-decoration: none" target="_blank"></a>&nbsp;&nbsp;&nbsp;<!--  Extra space -->
+  <a class="fa fa-github w3-hover-opacity" href="https://github.com/ichan018" style="text-decoration: none" target="_blank"></a>
+  
+ <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+ <p class="w3-small">Image of Ivan Chan was taken by Solomon Cheung in June 2022.</p>
+ <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> <!-- End footer -->
+ </footer>
+
+</body>
+</html>

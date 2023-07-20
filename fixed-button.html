@@ -1,0 +1,50 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  height: 5000px;
+  background: linear-gradient(#00ff04, #09aad3);
+}
+.dropdown{
+  position:fixed;
+}
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+  <button class="dropdown">Dropdown</button>
+  <button class="back-to-top hidden">Back To Top</button>
+  <script>
+    const showOnPx = 100;
+    const backToTopButton = document.querySelector(".back-to-top")
+
+    const scrollContainer = () => {
+      return document.documentElement || document.body;
+    };
+
+    document.addEventListener("scroll", () => {
+      if (scrollContainer().scrollTop > showOnPx) {
+        backToTopButton.classList.remove("hidden")
+      } else {
+        backToTopButton.classList.add("hidden")
+      }
+    })
+
+    const goToTop = () => {
+      document.body.scrollIntoView({
+        behavior:"smooth",
+      });
+    };
+    backToTopButton.addEventListener("click",goTop)
+  </script>
+</body>
+</html>

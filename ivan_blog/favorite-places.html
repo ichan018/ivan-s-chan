@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Favorite Places</h1>
+
+<h3>Santa Monica Pier</h3>
+<div id="googleMap" style="width:75%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(34.0090562,-118.4945737),
+  zoom:16,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG7PqW3ReHwNrr5AhDJONSCW27tkJ1s9w&callback=myMap"></script>
+
+<h5>Santa Monica Pier has many nice attractions.</h5>
+<h5>You can feel the ocean breeze when you are at Santa Monica Pier</h5>
+
+<h3>Point Roberts, WA</h3>
+<div id="pt-roberts" style="width:75%;height:400px;"></div>
+
+<script>
+function myMap2() {
+var mapProp2= {
+  center:new google.maps.LatLng(48.9885517,-123.0763993),
+  zoom:12,
+};
+var map2 = new google.maps.Map(document.getElementById("pt-roberts"),mapProp2);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG7PqW3ReHwNrr5AhDJONSCW27tkJ1s9w&callback=myMap2"></script>
+
+<h5>Point Roberts, Washington is a peninsula surrounded by British Columbia, Canada.</h5>
+<h5>You can buy gas in gallons or liters.</h5>
+
+<h3>Noah's Ark, Hong Kong, China</h3>
+<div id="noahs-ark-hk" style="width:75%;height:400px;"></div>
+
+<script>
+function myMap3() {
+var mapProp3= {
+  center:new google.maps.LatLng(22.3482613,114.0621974),
+  zoom:17,
+};
+var map3 = new google.maps.Map(document.getElementById("noahs-ark-hk"),mapProp3);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG7PqW3ReHwNrr5AhDJONSCW27tkJ1s9w&callback=myMap3"></script>
+
+<h5>See a replica of Noah's Ark in Ma Wan, Hong Kong.</h5>
+
+
+</body>
+</html>
+

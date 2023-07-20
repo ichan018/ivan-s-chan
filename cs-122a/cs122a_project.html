@@ -1,0 +1,66 @@
+   <!DOCTYPE html>
+<html>
+  <head>
+    <title>Brightness and Humidity Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+  </head>
+<body class="w3-light-grey">
+<p><a href="https://ivan-s-chan.w3spaces.com/index.html">Back</a></p>
+
+
+<div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>CS 122A: Brightness and Humidity Checker</h2>
+        
+        <div class="w3-container">
+          <h4 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2022</h4>
+          
+          <h4><a href="https://drive.google.com/drive/folders/1x0AnvsrIwrfHmV4qMHXImf0BlnOYXeTM?usp=sharing">See project files</a></h4>
+          <h4><a href="https://docs.google.com/document/d/1UXYP7oGvdzvKVs8jxlelhLlq3dCOxMoeHhzSvwk8JUk/edit?usp=sharing">See documentation</a></h4>
+                           
+      
+            <hr>
+          <iframe width="600" height="345" src="https://www.youtube.com/embed/IVOxGTUpkn0">
+          </iframe> 
+          <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
+          <p> Every 1000 ticks (1 second), the machine does 2 tasks:</p>
+
+          <ol>
+          <li>Check the brightness of the surroundings</li>
+          <li>Check the temperature and humidity of its surroundings.</li>
+          </ol>
+          <p>The photoresistor checks the brightness of its surroundings and returns a number. The number is between 0 and 1024, where 0 is maximum brightness and 1024 is minimum brightness. </p>
+          
+          <pre>
+            if number is less than 600: 
+               1 LED light will turn on
+               if number is less than 400:
+                   a second LED will also turn on (2 LED lights will be on)
+            
+          </pre>
+
+          <img src="led_1_light.png" alt="Breadboard connected to 2 blue LED lights. Left LED light is on. Right LED light is off. ">
+          <p>1 LED is on. The LED brightness is less than 600.</p>
+
+          <img src="led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
+          <p>2 LEDs are on. The LED brightness is less than 400. The brightness is higher than the brightness in the previous picture.</p>
+          
+          <p>In the Arduino system, I used Serial.print() statements to make sure the functions worked as intended.The serial monitor printed out the brightness, temperature, and humidity. </p>
+
+          
+          
+          <p><a href="https://ivan-s-chan.w3spaces.com/index.html">Home Page</a></p>
+          <hr>
+        </div>
+        
+      </div>
+
+
+</body>
+</html>

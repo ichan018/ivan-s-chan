@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My Favorite Places</h1>
+
+<script>
+    let autocomplete;
+    function initAutocomplete(){
+        autocomplete = new google.maps.places.Autocomplete(
+            document.getElementById('autocomplete'),
+            {
+                types:['establishment'],
+                componentRestrictions: {'country': ['US']},
+                fields: ['place_id', 'geometry', 'name']
+            });
+
+        autocomplete.addListener('place_changed', onPlaceChanged);
+    
+    }
+
+    function onPlaceChanged(){
+        var place = autocomplete.getPlace();
+
+        if(!place.geometry){
+            document.getElementById('autocomplete').placeholder = 'Enter a place';
+        } else{
+            document.getElementById('details').innerHTML = place.name;
+        }
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG7PqW3ReHwNrr5AhDJONSCW27tkJ1s9w&libraries=places&callback=initAutocomplete" async defer></script>
+<input id="autocomplete" placeholder="Enter a place" type="text" />
+</body>
+</html>
