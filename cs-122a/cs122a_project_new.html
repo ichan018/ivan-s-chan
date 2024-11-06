@@ -4,62 +4,123 @@
     <title>Brightness and Humidity Checker</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- remove old stylesheet later -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="styles-v2.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </style>
   </head>
-<body class="w3-light-grey">
-<p><a href="https://ivan-s-chan.w3spaces.com/index.html">Back</a></p>
+<body>
 
-
-<div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>CS 122A: Brightness and Humidity Checker</h2>
-        
-        <div class="w3-container">
-          <h4 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2022</h4>
-          
-          <h4><a href="https://drive.google.com/drive/folders/1x0AnvsrIwrfHmV4qMHXImf0BlnOYXeTM?usp=sharing">See project files</a></h4>
-          <h4><a href="https://docs.google.com/document/d/1UXYP7oGvdzvKVs8jxlelhLlq3dCOxMoeHhzSvwk8JUk/edit?usp=sharing">See documentation</a></h4>
-                           
-      
-            <hr>
-          <iframe width="600" height="345" src="https://www.youtube.com/embed/IVOxGTUpkn0">
-          </iframe> 
-          <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
-          <p> Every 1000 ticks (1 second), the machine does 2 tasks:</p>
-
-          <ol>
-          <li>Check the brightness of the surroundings</li>
-          <li>Check the temperature and humidity of its surroundings.</li>
-          </ol>
-          <p>The photoresistor checks the brightness of its surroundings and returns a number. The number is between 0 and 1024, where 0 is maximum brightness and 1024 is minimum brightness. </p>
-          
-          <pre>
-            if number is less than 600: 
-               1 LED light will turn on
-               if number is less than 400:
-                   a second LED will also turn on (2 LED lights will be on)
+<!-- add navigation bar here -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ivan S. Chan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ivan-s-chan.w3spaces.com/#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ivan-s-chan.w3spaces.com/#skills">Skills</a>
+            </li>
+            <!--
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+            </div>
+            -->
+            <li class="nav-item">
+                <a class="nav-link" href="https://ivan-s-chan.w3spaces.com/#programming-projects">Programming Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ivan-s-chan.w3spaces.com/#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ivan-s-chan.w3spaces.com/#links">Links</a>
+            </li>
             
-          </pre>
-
-          <img src="led_1_light.png" alt="Breadboard connected to 2 blue LED lights. Left LED light is on. Right LED light is off. ">
-          <p>1 LED is on. The LED brightness is less than 600.</p>
-
-          <img src="led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
-          <p>2 LEDs are on. The LED brightness is less than 400. The brightness is higher than the brightness in the previous picture.</p>
-          
-          <p>In the Arduino system, I used Serial.print() statements to make sure the functions worked as intended.The serial monitor printed out the brightness, temperature, and humidity. </p>
-
-          
-          
-          <p><a href="https://ivan-s-chan.w3spaces.com/index.html">Home Page</a></p>
-          <hr>
+            <!--
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+            </li>
+            -->
+        </ul>
         </div>
+    </div>
+</nav>
+
         
-      </div>
+        
+<div class="container">
+  <h2 class="section-class">CS 122A: Brightness and Humidity Checker</h2>
+  <h4 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2022</h4>
+  
+  <h4><a href="https://drive.google.com/drive/folders/1x0AnvsrIwrfHmV4qMHXImf0BlnOYXeTM?usp=sharing">See project files</a></h4>
+  <h4><a href="https://docs.google.com/document/d/1UXYP7oGvdzvKVs8jxlelhLlq3dCOxMoeHhzSvwk8JUk/edit?usp=sharing">See documentation</a></h4>
+                    
+
+    <hr>
+  <iframe width="600" height="345" src="https://www.youtube.com/embed/IVOxGTUpkn0">
+  </iframe> 
+  <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
+  <p> Every 1000 ticks (1 second), the machine does 2 tasks:</p>
+
+  <ol>
+  <li>Check the brightness of the surroundings</li>
+  <li>Check the temperature and humidity of its surroundings.</li>
+  </ol>
+  <p>The photoresistor checks the brightness of its surroundings and returns a number. The number is between 0 and 1024, where 0 is maximum brightness and 1024 is minimum brightness. </p>
+  
+  <pre>
+    if number is less than 600: 
+        1 LED light will turn on
+        if number is less than 400:
+            a second LED will also turn on (2 LED lights will be on)
+    
+  </pre>
+
+  <img src="led_1_light.png" alt="Breadboard connected to 2 blue LED lights. Left LED light is on. Right LED light is off. ">
+  <p>1 LED is on. The LED brightness is less than 600.</p>
+
+  <img src="led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
+  <p>2 LEDs are on. The LED brightness is less than 400. The brightness is higher than the brightness in the previous picture.</p>
+  
+  <p>In the Arduino system, I used Serial.print() statements to make sure the functions worked as intended.The serial monitor printed out the brightness, temperature, and humidity. </p>
+
+  
+  
+  <p><a href="https://ivan-s-chan.w3spaces.com/index.html">Home Page</a></p>
+  <hr>
+</div>
+        
+      
 
 
 </body>
