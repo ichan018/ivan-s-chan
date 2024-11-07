@@ -88,8 +88,27 @@
 
     <hr>
   <iframe width="600" height="345" src="https://www.youtube.com/embed/IVOxGTUpkn0">
-  </iframe> 
+  </iframe>
+  <h5 class="text-primary"><b>Summary</b></h5>
+  <p>The Brightness and Humidity Checker was a project for the CS122A - Intermediate Embedded and Real-Time Systems course at UC Riverside. </p> 
   <p>I measured temperature and humidity with Arduino project that had breadboard, LEDs, and resistors.</p>
+  
+  <h5 class="text-primary"><b>Materials Used</b></h5>
+  <p>Laptop, Arduino , UNO R3 Controller Board, breadboard, 2 LEDs, photoresistors, resistors, DHT11 Temperature and Humidity Module, wires</p>
+
+  <h5 class="text-primary"><b>Definitions</b></h5>
+  <p> The Temperature and Humidity module is a module that can determine the temperature and humidity of the surroundings of a circuit.</p>
+  <p>
+    Photoresistor: light-sensitive devices that can measure the light intensity.
+    Source: <a href="https://eepower.com/resistor-guide/resistor-types/photo-resistor/#">EE POWER</a>
+  </p>
+  
+  <h5 class="text-primary"><b>Explanation of the Project</b></h5>
+  <p>
+  The code was written using the Arduino programming language in the Arduino application. 
+    I used a blue USB cable to upload the code onto the Arduino UNO R3 controller board.
+    The controller board was connected to the DHT11 Temperature and Humidity Sensor.
+  </p>
   <p> Every 1000 ticks (1 second), the machine does 2 tasks:</p>
 
   <ol>
@@ -103,14 +122,25 @@
         1 LED light will turn on
         if number is less than 400:
             a second LED will also turn on (2 LED lights will be on)
+    </n>
     
   </pre>
 
-  <img src="led_1_light.png" alt="Breadboard connected to 2 blue LED lights. Left LED light is on. Right LED light is off. ">
-  <p>1 LED is on. The LED brightness is less than 600.</p>
-
-  <img src="led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
+  <div class="row">
+    <div class="col-sm">
+      <img src="led_1_light.png" alt="Breadboard connected to 2 blue LED lights. Left LED light is on. Right LED light is off. ">
+      <p>1 LED is on. The LED brightness is less than 600.</p>
+    </div>
+    <div class="col-sm">
+      <img src="led_2_lights.png" alt="Breadboard connected to 2 blue LED lights. Both left and right LEDs are on. ">
   <p>2 LEDs are on. The LED brightness is less than 400. The brightness is higher than the brightness in the previous picture.</p>
+    </div>
+  </div> 
+  <!-- End of row -->
+
+  
+
+  
   
   <p>In the Arduino system, I used Serial.print() statements to make sure the functions worked as intended.The serial monitor printed out the brightness, temperature, and humidity. </p>
 
